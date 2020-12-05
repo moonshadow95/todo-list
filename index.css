@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Sam3KRFont";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Sam3KRFont.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-image: url(images/pixel_wallpaper.png);
+  background-size: contain;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Sam3KRFont;
+  color: honeydew;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.js-clock {
+  margin: 70px 0 20px 0;
+  font-size: 34px;
+}
+.greeting,
+.form {
+  display: none;
+  font-size: 30px;
+  font-weight: 500;
+}
+.showing {
+  display: block;
+}
+.js-toDoForm input {
+  width: 250px;
+  height: 30px;
+  font-size: 18px;
+  text-indent: 10px;
+  font-family: Sam3KRFont;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  margin-bottom: 20px;
+}
+.js-toDoList {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.js-toDoList li {
+  font-size: 20px;
+  list-style-type: square;
+  width: 250px;
+}
+.js-toDoList button {
+  border: none;
+  background-color: transparent;
+  margin-right: 15px;
+  height: 30px;
+  width: 30px;
+  font-size: 16px;
+  float: right;
+}
+.js-weather {
+  font-size: 18px;
+}
