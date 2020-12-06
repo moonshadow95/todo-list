@@ -31,7 +31,7 @@ body {
 .showing {
   display: block;
 }
-.js-toDoForm input {
+input {
   width: 250px;
   height: 30px;
   font-size: 18px;
@@ -41,26 +41,39 @@ body {
   color: #fff;
   margin-bottom: 20px;
 }
-.js-toDoList {
+.js-toDoList,
+.js-finishedList {
   display: flex;
   gap: 5px;
   flex-direction: column;
   margin-bottom: 20px;
+  margin-left: -30px;
 }
-.js-toDoList li {
+.js-toDoList li,
+.js-finishedList li {
   font-size: 20px;
   list-style-type: square;
-  width: 250px;
+  width: 245px;
 }
-.js-toDoList button {
+.js-finishedList li span {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.js-toDoList button,
+.js-finishedList button {
   border: none;
   background-color: transparent;
-  margin-right: 15px;
-  height: 30px;
-  width: 30px;
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
   font-size: 16px;
   float: right;
 }
 .js-weather {
   font-size: 18px;
 }
+@media screen and (max-width: 1200px) {
+  body {
+    background-image: url(images/2ptw1z95wyn51.png);
+  }
+} ;
